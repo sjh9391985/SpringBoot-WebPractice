@@ -1,6 +1,7 @@
 package com.spring.gmta.mvc.service;
 
 import com.spring.gmta.mvc.domain.Board;
+import com.spring.gmta.mvc.paramter.BoardParameter;
 import com.spring.gmta.mvc.repository.BoardRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -21,7 +22,7 @@ public class BoardService {
         return boardRepository.get(boardSeq);
     };
 
-    public int save(Board parameter){
+    public int save(BoardParameter parameter){
         Board board = boardRepository.get(parameter.getBoardSeq());
         if (board == null) {
             boardRepository.save(parameter);
