@@ -26,8 +26,6 @@
 //
 //        ApiSelectorBuilder apis = docket.select().apis(RequestHandlerSelectors.basePackage("com.spring.gmta.mvc.controller"));
 //        apis.paths(PathSelectors.ant("/**"));
-//
 //        return apis.build();
-//
 //    }
 //}
